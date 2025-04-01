@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 import { Link } from "react-router-dom"
 import { ArrowRight, Globe, Smartphone } from "lucide-react"
 import ProjectCard from "./ProjectCard"
-import { webProjects,mobileProjects } from "../assets/Data"
+import {webProjects,mobileProjects} from "../assets/Data"
 
 const ProjectsPreview = () => {
   return (
