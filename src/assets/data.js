@@ -1,7 +1,7 @@
-import Mallzonix from "../assets/images/mallzonix.png"
-import IRCDashboard from "../assets/images/ircdashboard.png"
-import Hostelhubb from "../assets/images/hostelhubb.png"
-import KNUSTAttendance from "../assets/images/knustattendanceapp.png"
+import Mallzonix from "../assets/images/mallzonix.png";
+import IRCDashboard from "../assets/images/ircdashboard.png";
+import Hostelhubb from "../assets/images/hostelhubb.png";
+import KNUSTAttendance from "../assets/images/knustattendanceapp.png";
 
 export const webProjects = [
   {
@@ -20,14 +20,13 @@ export const webProjects = [
     tags: ["React.js", "Vite", "Material UI", "Tailwind CSS", "Recharts", "Parser(CSV reading)"],
     link: "https://irc-dashboard-eight.vercel.app/",
   },
-]
+];
 
 export const mobileProjects = [
   {
     id: 3,
     title: "Hostelhubb",
-    description:
-      "HostelHubb is a mobile application designed to help students find and book accommodation in hostels easily and efficiently.",
+    description: "A mobile app for hostel booking.",
     image: Hostelhubb,
     tags: ["React Native", "Expo", "Firebase", "Context API", "Node.js", "Express", "Node Mailer", "Paystack", "Firestore", "Google Maps"],
     playStoreLink: "https://play.google.com/store/apps/details?id=com.Hostelhubb.Hostelhubb",
@@ -36,11 +35,10 @@ export const mobileProjects = [
   {
     id: 4,
     title: "KNUST Attendance App",
-    description:
-      "The KNUST Attendance App allows guardians, scholarship sponsors, and the university to track and monitor students' attendance in real-time.",
+    description: "A mobile solution for tracking student attendance.",
     image: KNUSTAttendance,
     tags: ["React Native", "Expo", "AppWrite", "Map Box", "Node.js", "Express", "Node Mailer", "Geo-Location", "TypeScript", "Native Tailwind"],
     playStoreLink: "https://play.google.com/store/apps/details?id=com.elinilesolutions.attendance_knust",
     appStoreLink: "https://apps.apple.com/us/app/knust-attendance/id6741420471?platform=iphone",
   },
-]
+];
