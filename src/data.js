@@ -1,7 +1,7 @@
-import Mallzonix from "../assets/images/mallzonix.png";
-import IRCDashboard from "../assets/images/ircdashboard.png";
-import Hostelhubb from "../assets/images/hostelhubb.png";
-import KNUSTAttendance from "../assets/images/knustattendanceapp.png";
+import Mallzonix from "./assets/images/mallzonix.png";
+import IRCDashboard from "./assets/images/ircdashboard.png";
+import Hostelhubb from "./assets/images/hostelhubb.png";
+import KNUSTAttendance from "./assets/images/knustattendanceapp.png";
 
 export const webProjects = [
   {
