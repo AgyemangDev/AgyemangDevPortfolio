@@ -10,20 +10,25 @@ const TestimonialsPreview = () => {
   const testimonials = [
     {
       id: 1,
-      name: "Jane Smith",
-      role: "Product Manager at TechCorp",
+      name: "Obrempong Kwabena Osei-Wusu",
+      role: "Python Programmer & Data Analyst",
       content:
-        "Working with this developer was a fantastic experience. They delivered the project on time and exceeded our expectations with their attention to detail and problem-solving skills.",
-      avatar: "/placeholder.svg?height=100&width=100",
+        "Skilled, detail-oriented developer with strong React skills and great collaboration—highly recommend working with him.",
     },
     {
-      id: 2,
-      name: "John Doe",
-      role: "CEO at StartupX",
+      id: 3,
+      name: "Derrick Kello Jr",
+      role: "Co-founder & Junior Developer, Hostelhubb",
       content:
-        "An exceptional developer who transformed our vision into reality. Their technical expertise and communication skills made the development process smooth and efficient.",
-      avatar: "/placeholder.svg?height=100&width=100",
+        "Working with Gyamfi was inspiring—his backend planning, speed, and leadership brought Hostelhubb to life in record time. A true visionary and teammate.",
     },
+    {
+      id: 4,
+      name: "Joseph E.",
+      role: "Project Manager from Ethiopia",
+      content:
+        "I worked with Joseph on a Telegram clone project. Although the project wasn’t ultimately successful, I made sure to complete my part diligently and on time. I maintained strong communication and delivered quality work despite project challenges. This experience reinforced my commitment to professionalism and accountability.",
+    }
   ]
 
   return (
@@ -73,4 +78,3 @@ const TestimonialsPreview = () => {
 }
 
 export default TestimonialsPreview
-

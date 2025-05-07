@@ -4,57 +4,52 @@ import { motion } from "framer-motion"
 import TestimonialCard from "../components/TestimonialCard"
 
 const Testimonials = () => {
-  // Sample testimonials data
-  const testimonials = [
-    {
-      id: 1,
-      name: "Jane Smith",
-      role: "Product Manager at TechCorp",
-      content:
-        "Working with this developer was a fantastic experience. They delivered the project on time and exceeded our expectations with their attention to detail and problem-solving skills.",
-      avatar: "/placeholder.svg?height=100&width=100",
-    },
-    {
-      id: 2,
-      name: "John Doe",
-      role: "CEO at StartupX",
-      content:
-        "An exceptional developer who transformed our vision into reality. Their technical expertise and communication skills made the development process smooth and efficient.",
-      avatar: "/placeholder.svg?height=100&width=100",
-    },
-    {
-      id: 3,
-      name: "Emily Johnson",
-      role: "CTO at InnovateTech",
-      content:
-        "I was impressed by the developer's ability to quickly understand our complex requirements and deliver a solution that perfectly met our needs. Their code quality and documentation were outstanding.",
-      avatar: "/placeholder.svg?height=100&width=100",
-    },
-    {
-      id: 4,
-      name: "Michael Brown",
-      role: "Founder at DesignStudio",
-      content:
-        "The developer's attention to design details and user experience was exceptional. They not only implemented our designs perfectly but also suggested improvements that enhanced the overall product.",
-      avatar: "/placeholder.svg?height=100&width=100",
-    },
-    {
-      id: 5,
-      name: "Sarah Wilson",
-      role: "Project Manager at WebSolutions",
-      content:
-        "We've worked with many developers over the years, but this one stands out for their professionalism, technical skills, and ability to deliver under tight deadlines. Would definitely work with them again.",
-      avatar: "/placeholder.svg?height=100&width=100",
-    },
-    {
-      id: 6,
-      name: "David Lee",
-      role: "Marketing Director at GrowthCo",
-      content:
-        "The developer created a website that not only looks great but also performs exceptionally well. Our conversion rates have increased significantly since the launch. Highly recommended!",
-      avatar: "/placeholder.svg?height=100&width=100",
-    },
-  ]
+ // Sample testimonials data
+const testimonials = [
+  {
+    id: 1,
+    name: "Obrempong Kwabena Osei-Wusu",
+    role: "Python Programmer & Data Analyst",
+    content:
+      "Skilled, detail-oriented developer with strong React skills and great collaboration—highly recommend working with him.",
+  },
+  {
+    id: 3,
+    name: "Derrick Kello Jr",
+    role: "Co-founder & Junior Developer, Hostelhubb",
+    content:
+      "Working with Gyamfi was inspiring—his backend planning, speed, and leadership brought Hostelhubb to life in record time. A true visionary and teammate.",
+  },
+  {
+    id: 4,
+    name: "Joseph E.",
+    role: "Project Manager from Ethiopia",
+    content:
+      "Gyamfi was reliable and delivered his part diligently despite project hurdles.",
+  },
+  {
+    id: 5,
+    name: "Pastor Kwame Ahenkora",
+    role: "Founder, Mizpah International Church – Ohio",
+    content:
+      "He built our church site professionally—very supportive and easy to work with.",
+  },
+  {
+    id: 6,
+    name: "Gyasi B.",
+    role: "Founder, Gyasi Build Mart",
+    content:
+      "Fantastic ecommerce website—great design and functionality. It boosted my business visibility.",
+  },
+  {
+    id: 7,
+    name: "CEO, NextGenTransport System",
+    role: "Transport & Logistics Entrepreneur",
+    content:
+      "Exceptional transport system build. Gyamfi’s work helped improve our operations and client reach.",
+  }
+]
+
 
   return (
     <motion.div

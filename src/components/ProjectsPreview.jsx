@@ -9,6 +9,7 @@ import Mallzonix from "../assets/images/mallzonix.png";
 import IRCDashboard from "../assets/images/ircdashboard.png";
 import Hostelhubb from "../assets/images/hostelhubb.png";
 import KNUSTAttendance from "../assets/images/knustattendanceapp.png";
+import NextGenTransport from "../assets/images/nextgentransport.png"
 
 const webProjects = [
   {
@@ -27,6 +28,14 @@ const webProjects = [
     tags: ["React.js", "Vite", "Material UI", "Tailwind CSS", "Recharts", "Parser(CSV reading)"],
     link: "https://irc-dashboard-eight.vercel.app/",
   },
+  {
+    id: 3,
+    title: "NextGen Transport Services",
+    description: "Student bus booking with payment, e-mail notification, E-ticketing",
+    image: NextGenTransport,
+    tags: ["React.js", "Vite", "Paystack", "Tailwind CSS", "E-mail Tickiting", "CMS"],
+    link: "https://nextgentransportsite.vercel.app/",
+  }
 ];
 
 const mobileProjects = [

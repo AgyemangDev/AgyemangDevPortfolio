@@ -12,13 +12,6 @@ const TestimonialCard = ({ testimonial, index }) => {
       className="bg-gray-900 border border-green-500/20 rounded-lg p-6 hover:border-green-500 transition-all duration-300"
     >
       <div className="flex items-start mb-4">
-        <div className="mr-4">
-          <img
-            src={testimonial.avatar || "/placeholder.svg"}
-            alt={testimonial.name}
-            className="w-12 h-12 rounded-full object-cover"
-          />
-        </div>
         <div>
           <h4 className="text-lg font-bold">{testimonial.name}</h4>
           <p className="text-green-500 text-sm">{testimonial.role}</p>
