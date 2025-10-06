@@ -19,6 +19,8 @@ import Tailwind from "../assets/icons/tailwind.png"
 import Materialui from "../assets/icons/materialui.png"
 import Bootstrap from "../assets/icons/bootstrap.png"
 import Paystack from "../assets/icons/paystack.png"
+import Java from "../assets/icons/java.png"
+import Typescript from "../assets/icons/typescript.png"
 
 // Component for a single floating tech bubble with image
 
@@ -106,6 +108,8 @@ const TechStack = () => {
     { name: "React", imageSrc: ReactNative },
     { name: "Node.js", imageSrc: Node },
     { name: "JavaScript", imageSrc: Javascript },
+    { name: "Java", imageSrc: Java },
+    { name: "Typescript", imageSrc: Typescript },
     { name: "HTML5", imageSrc: Html},
     { name: "CSS3", imageSrc: CSS },
     { name: "Tailwind CSS", imageSrc: Tailwind },

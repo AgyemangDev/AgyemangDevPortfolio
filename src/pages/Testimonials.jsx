@@ -20,6 +20,12 @@ const testimonials = [
     content:
       "Working with Gyamfi was inspiring—his backend planning, speed, and leadership brought Hostelhubb to life in record time. A true visionary and teammate.",
   },
+      {
+      id: 8,
+      name: " Umair Atique",
+      role: "UIUX DESIGNER | GRAPHIC DESIGNER | BRANDING | FIGMA",
+      content:
+        "I had the pleasure of studying Software Engineering with Agyemang at Junia. He’s a great teammate—collaborative, dependable, and always keeps projects on track. Agyemang is skilled in both web and mobile development, and he brings a positive, open-minded attitude to every team. It’s been a pleasure working with him, and I’m confident he’ll excel wherever he goes." },
   {
     id: 4,
     name: "Joseph E.",

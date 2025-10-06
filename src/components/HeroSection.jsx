@@ -56,7 +56,7 @@ const HeroSection = () => {
               transition={{ delay: 0.6, duration: 0.5 }}
               className="text-gray-400 text-lg max-w-lg"
             >
-              I build modern, responsive web and mobile applications with a focus on user experience and performance.
+            I’m a software engineer specializing in building modern, responsive web and mobile applications with a strong focus on user experience, scalability, and performance.
             </motion.p>
 
             <motion.div
