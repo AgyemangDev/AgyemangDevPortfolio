@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import HeroSection from "../components/HeroSection"
-import TechStack from "../components/TechStack"
+import TechStack from "../components/techstack/TechStack"
 import ProjectsPreview from "../components/ProjectsPreview"
 import TestimonialsPreview from "../components/TestimonialsPreview"
 import ContactCTA from "../components/ContactCTA"
