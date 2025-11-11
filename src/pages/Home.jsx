@@ -6,6 +6,7 @@ import TechStack from "../components/techstack/TechStack"
 import ProjectsPreview from "../components/ProjectsPreview"
 import TestimonialsPreview from "../components/TestimonialsPreview"
 import ContactCTA from "../components/ContactCTA"
+import CodingStats from "../components/CodingStats"
 
 const Home = () => {
   return (
@@ -14,9 +15,10 @@ const Home = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
-      className="pt-16"
+      className="pt-16 space-y-16"
     >
       <HeroSection />
+      <CodingStats />
       <TechStack />
       <ProjectsPreview />
       <TestimonialsPreview />
@@ -26,4 +28,3 @@ const Home = () => {
 }
 
 export default Home
-

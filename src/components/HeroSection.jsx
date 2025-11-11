@@ -39,7 +39,7 @@ const HeroSection = () => {
               transition={{ delay: 0.2, duration: 0.5 }}
               className="inline-block px-4 py-1 bg-green-500/10 text-green-500 rounded-full text-sm font-medium"
             >
-              Full Stack&nbsp;|&nbsp;Web&nbsp;|&nbsp;App Developer
+              Full Stack&nbsp;|&nbsp;Web&nbsp;|&nbsp;App Developer |&nbsp;DevOps
             </motion.div>
 
             {/* Title */}
@@ -60,7 +60,10 @@ const HeroSection = () => {
               transition={{ delay: 0.6, duration: 0.5 }}
               className="text-gray-400 text-lg max-w-lg"
             >
-              I’m a software engineer specializing in building modern, responsive web and mobile applications with a strong focus on user experience, scalability, and performance.
+             Motivated software engineer skilled in building modern, responsive web and mobile applications 
+             using React Native, Node.js, Next.js, Kotlin, and Python. Passionate about clean code, problem-solving,
+              and delivering scalable, high-performance solutions. Experienced in Agile collaboration, RESTful APIs,
+               and database management, seeking an internship or alternance to contribute to innovative projects and grow as a developer.
             </motion.p>
 
             {/* Buttons Section */}
