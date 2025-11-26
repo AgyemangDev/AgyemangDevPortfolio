@@ -1,25 +1,33 @@
 "use client"
-
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 import { Download, Award, BookOpen, Code, Coffee } from "lucide-react"
+import { experienceData } from "../assets/data/experienceData";
+import AgyemangDev2 from "../assets/images/AgyemangDev2.jpeg"
 
 const About = () => {
   const handleDownloadCV = () => {
-    // Create a link element
-    const link = document.createElement("a")
-    link.href = "/resume.pdf" // Path to your CV file in the public folder
-    link.download = "YourName_CV.pdf"
-    document.body.appendChild(link)
-    link.click()
-    document.body.removeChild(link)
-  }
+    const link = document.createElement("a");
+    link.href = "agyemangdev_cv.pdf";
+    link.download = "AgyemangDev_CV.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
+  const startYear = 2021;
+  const currentYear = new Date().getFullYear();
+const yearsExperience = currentYear - startYear;
 
   // Stats data
   const stats = [
-    { icon: <Code size={24} />, value: "50+", label: "Projects Completed" },
-    { icon: <Coffee size={24} />, value: "1000+", label: "Cups of Coffee" },
+    { icon: <Code size={24} />, value: "20+", label: "Projects Completed" },
+    { icon: <Coffee size={24} />, value: "300+", label: "Cups of Coffee" },
     { icon: <Award size={24} />, value: "10+", label: "Awards Received" },
-    { icon: <BookOpen size={24} />, value: "5+", label: "Years Experience" },
+    { 
+  icon: <BookOpen size={24} />, 
+  value: `${yearsExperience}+`, 
+  label: "Years Experience" 
+},
   ]
 
   return (
@@ -37,7 +45,7 @@ const About = () => {
               <div className="relative">
                 <div className="w-full h-[500px] bg-gradient-to-br from-green-500/20 to-transparent rounded-lg overflow-hidden">
                   <img
-                    src="/placeholder.svg?height=500&width=400"
+                    src={AgyemangDev2}
                     alt="About Me"
                     className="w-full h-full object-cover"
                   />
@@ -137,70 +145,54 @@ const About = () => {
             <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-green-500/20"></div>
 
             {/* Timeline items */}
-            <div className="space-y-12">
-              {/* Timeline item 1 */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-                className="relative"
-              >
-                <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-4 w-8 h-8 rounded-full border-4 border-green-500 bg-black"></div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  <div className="md:text-right md:pr-12">
-                    <div className="text-green-500 font-bold">2018 - 2020</div>
-                    <h3 className="text-xl font-bold mb-2">Frontend Developer</h3>
-                    <p className="text-gray-400">
-                      Started my career as a Frontend Developer at TechCorp, working on responsive web applications and
-                      e-commerce platforms.
-                    </p>
-                  </div>
-                  <div className="md:pl-12"></div>
-                </div>
-              </motion.div>
+{/* Timeline items */}
+<div className="space-y-12">
+  {experienceData.map((item, index) => {
+    const isLeft = index % 2 === 0; // alternate left/right
 
-              {/* Timeline item 2 */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.2 }}
-                className="relative"
-              >
-                <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-4 w-8 h-8 rounded-full border-4 border-green-500 bg-black"></div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  <div className="md:text-right md:pr-12 md:order-1 order-2"></div>
-                  <div className="md:pl-12 md:order-2 order-1">
-                    <div className="text-green-500 font-bold">2020 - 2022</div>
-                    <h3 className="text-xl font-bold mb-2">Full Stack Developer</h3>
-                    <p className="text-gray-400">
-                      Expanded my skills to become a Full Stack Developer at InnovateTech, working on complex web
-                      applications and APIs.
-                    </p>
-                  </div>
-                </div>
-              </motion.div>
+    return (
+      <motion.div
+        key={index}
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, delay: index * 0.2 }}
+        className="relative"
+      >
+        {/* Timeline dot */}
+        <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-4 w-8 h-8 rounded-full border-4 border-green-500 bg-black"></div>
 
-              {/* Timeline item 3 */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.4 }}
-                className="relative"
-              >
-                <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-4 w-8 h-8 rounded-full border-4 border-green-500 bg-black"></div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  <div className="md:text-right md:pr-12">
-                    <div className="text-green-500 font-bold">2022 - Present</div>
-                    <h3 className="text-xl font-bold mb-2">Senior Developer</h3>
-                    <p className="text-gray-400">
-                      Currently working as a Senior Developer at FutureSoft, leading teams and architecting solutions
-                      for enterprise clients.
-                    </p>
-                  </div>
-                  <div className="md:pl-12"></div>
-                </div>
-              </motion.div>
+        {/* Content grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          
+          {/* LEFT SIDE */}
+          {isLeft ? (
+            <div className="md:text-right md:pr-12">
+              <div className="text-green-500 font-bold">{item.period}</div>
+              <h3 className="text-xl font-bold mb-2">{item.role}</h3>
+              <p className="text-gray-400">{item.description}</p>
             </div>
+          ) : (
+            <div className="md:pr-12"></div>
+          )}
+
+          {/* RIGHT SIDE */}
+          {!isLeft ? (
+            <div className="md:pl-12">
+              <div className="text-green-500 font-bold">{item.period}</div>
+              <h3 className="text-xl font-bold mb-2">{item.role}</h3>
+              <p className="text-gray-400">{item.description}</p>
+            </div>
+          ) : (
+            <div className="md:pl-12"></div>
+          )}
+
+        </div>
+      </motion.div>
+    );
+  })}
+</div>
+
           </div>
         </div>
       </section>
