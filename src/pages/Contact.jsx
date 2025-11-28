@@ -44,8 +44,8 @@ const Contact = () => {
 
   const contactInfo = [
     { icon: <Mail size={24} />, label: "Email", value: "gyamfiagyemang999@gmail.com" },
-    { icon: <Phone size={24} />, label: "Phone", value: "+233 542 353 326" },
-    { icon: <MapPin size={24} />, label: "Location", value: "Kumasi - Ghana" },
+    { icon: <Phone size={24} />, label: "Phone", value: "+33 753 188 042" },
+    { icon: <MapPin size={24} />, label: "Location", value: "Lille - France" },
   ]
 
   const socialLinks = [
@@ -224,8 +224,8 @@ const Contact = () => {
 
               <div className="p-6 bg-gray-900 rounded-lg border border-green-500/20">
                 <h3 className="text-xl font-bold mb-4">Office Hours</h3>
-                <p className="text-gray-400 mb-2">Monday - Friday: 9:00 AM - 6:00 PM</p>
-                <p className="text-gray-400">Saturday - Sunday: Closed</p>
+                <p className="text-gray-400 mb-2">Available 24/7. </p>
+  
               </div>
             </motion.div>
           </div>
