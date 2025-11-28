@@ -60,10 +60,14 @@ const HeroSection = () => {
               transition={{ delay: 0.6, duration: 0.5 }}
               className="text-gray-400 text-lg max-w-lg"
             >
-             Motivated software engineer skilled in building modern, responsive web and mobile applications 
-             using React Native, Node.js, Next.js, Kotlin, and Python. Passionate about clean code, problem-solving,
-              and delivering scalable, high-performance solutions. Experienced in Agile collaboration, RESTful APIs,
-               and database management, seeking an internship or alternance to contribute to innovative projects and grow as a developer.
+           I am a Masters Student in Software Engineering at JUNIA-ISEN, 
+           focused on using code to turn complex problems into simple, 
+           reliable products. I've built real-word web and mobile apps in React, 
+           TypeScript, Node.js, Java, Kotlin and Python within agile teams, from
+            booking platforms to tracking and recommendation tools. I care about 
+            clean, well-tested code, understanding users needs and measuring impact,
+             and I am motivated to help deliver scalable solutions that actually 
+             makes people's lives easier.
             </motion.p>
 
             {/* Buttons Section */}
