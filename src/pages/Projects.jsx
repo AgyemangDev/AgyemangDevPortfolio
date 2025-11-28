@@ -4,103 +4,14 @@ import { useState } from "react"
 import { motion } from "framer-motion"
 import { Globe, Smartphone } from "lucide-react"
 import ProjectCard from "../components/ProjectCard"
+import { webProjects, mobileProjects } from "../assets/data/projects"
 
-import Mallzonix from "../assets/images/mallzonix.png";
-import IRCDashboard from "../assets/images/ircdashboard.png";
-import Hostelhubb from "../assets/images/hostelhubb.png";
-import KNUSTAttendance from "../assets/images/knustattendanceapp.png";
-import NextGenTransport from "../assets/images/nextgentransport.png"
-import HostelhubbWeb from "../assets/images/hostelhubbwebpage.png"
-import HostelhubbAdminApp from "../assets/images/hostelhubbadmin.png"
-import GBM from "../assets/images/gbm.png"
 
 const Projects = () => {
   const [filter, setFilter] = useState("all")
 
   // Sample projects data
-  const webProjects = [
-    {
-      id: 1,
-      title: "MallZonix E-Commerce Platform",
-      description: "A full-stack e-commerce platform with payment integration",
-      image: Mallzonix,
-      tags: ["React.js", "Firebase", "Firestore", "Paystack", "TailwindCSS", "Vercel", "Tawk.to Chatbot/AI"],
-      link: "https://mallzonix.vercel.app/",
-    },
-    {
-      id: 7,
-      title: "Hostelhubb Website",
-      description: "A modern, responsive frontend platform built to promote and streamline hostel discovery and booking for students across Ghana.",
-      image: HostelhubbWeb,
-      tags: ["React.js", "TailwindCSS","Lucide React", "Vercel", "Tawk.to Chatbot/AI"],
-      link: "https://hostelhubb.com",
-    },
-    {
-      id: 2,
-      title: "IRC Dashboard",
-      description: "A dashboard for International Research Consortium to visualize data by uploading CSV data",
-      image: IRCDashboard,
-      tags: ["React.js", "Vite", "Material UI", "Tailwind CSS", "Recharts", "Parser(CSV reading)"],
-      link: "https://irc-dashboard-eight.vercel.app/",
-    },
-    {
-      id: 6,
-      title: "NextGen Transport Services",
-      description: "Student bus booking with payment, e-mail notification, E-ticketing",
-      image: NextGenTransport,
-      tags: ["React.js", "Vite", "Paystack", "Tailwind CSS", "E-mail Tickiting", "CMS"],
-      link: "https://nextgentransportsite.vercel.app/",
-    },
-    {
-      id: 6,
-      title: "Gyasi Build Mart",
-      description: "A dynamic e-commerce platform for the construction industry, offering seamless online shopping and service management.",
-      image: GBM,
-      tags: [
-        "React.js",
-        "Vite",
-        "Paystack Integration",
-        "Tailwind CSS",
-        "Email Ticketing",
-        "Custom CMS",
-        "E-commerce",
-        "Responsive Design",
-        "Real-time Notifications"
-      ],
-      link: "https://gyasibuildmart.com",
-    }
-    
-  ];
-  
-  const mobileProjects = [
-    {
-      id: 3,
-      title: "Hostelhubb",
-      description: "A mobile app for hostel booking across Ghana.",
-      image: Hostelhubb,
-      tags: ["React Native", "Expo", "Firebase","Email-Ticketing", "Context API", "Node.js", "Express", "Node Mailer", "Paystack", "Firestore", "Google Maps","Push Notification"],
-      playStoreLink: "https://play.google.com/store/apps/details?id=com.Hostelhubb.Hostelhubb",
-      appStoreLink: "https://apps.apple.com/us/app/hostelhubb/id6738483533",
-    },
-    {
-      id: 8,
-      title: "Hostelhubb Admin",
-      description: "A powerful mobile app designed for hostel managers to efficiently manage bookings, facilities, and hostel operations.",
-      image: HostelhubbAdminApp,
-      tags: ["React Native", "Expo", "Firebase", "Context API", "Node.js", "Express", "Node Mailer", "Paystack", "Firestore", "Google Maps","Backend Services", "Push Notification"],
-      playStoreLink: "https://play.google.com/store/apps/details?id=com.HostelhubbAdmin.HostelhubbAdmin",
-      appStoreLink: "https://apps.apple.com/us/app/hostelhubb-admin/id6738576378",
-    },
-    {
-      id: 4,
-      title: "KNUST Attendance App",
-      description: "A mobile solution for tracking student attendance.",
-      image: KNUSTAttendance,
-      tags: ["React Native", "Expo", "AppWrite", "Map Box", "Node.js", "Express", "Node Mailer", "Geo-Location", "TypeScript", "Native Tailwind"],
-      playStoreLink: "https://play.google.com/store/apps/details?id=com.elinilesolutions.attendance_knust",
-      appStoreLink: "https://apps.apple.com/us/app/knust-attendance/id6741420471?platform=iphone",
-    },
-  ];
+
 
   // Filter projects based on selected filter
   const filteredProjects =

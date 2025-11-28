@@ -24,6 +24,7 @@ import Reactjs from "../../assets/icons/reactjs.png";
 import AndroidStudio from "../../assets/icons/androidstudio.png";
 import Kotlin from "../../assets/icons/kotlin.png";
 import VsCode from "../../assets/icons/vscode.png";
+import Supabase from "../../assets/icons/supabase.png"
 
 // ✅ Categories
 export const languages = [
@@ -49,6 +50,7 @@ export const backend = [
   { name: "Node.js", imageSrc: Node },
   { name: "MongoDB", imageSrc: Mongodb },
   { name: "Firebase", imageSrc: Firebase },
+    { name: "Supabase", imageSrc: Supabase },
   { name: "Appwrite", imageSrc: Appwrite },
   { name: "SQL", imageSrc: SQL },
 ];
