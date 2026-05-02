@@ -1,13 +1,257 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" prefix="og: https://ogp.me/ns#">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+    <!-- ═══════════════════════════════════════════════
+         CORE META
+    ═══════════════════════════════════════════════ -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AgyemangDev - CTFOLAT</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Primary Title & Description -->
+    <title>AgyemangDev | Gyamfi Nana Agyemang — Full-Stack & Mobile Developer · Ghana · France</title>
+    <meta
+      name="description"
+      content="AgyemangDev is Gyamfi Nana Agyemang — Ghanaian full-stack & mobile app developer (React, Next.js, React Native, Node.js, Kotlin). Co-founder & CTO of HostelHubb, the student accommodation platform. KNUST CS · JUNIA ISEN France engineering student."
+    />
+    <meta
+      name="keywords"
+      content="AgyemangDev, Gyamfi Nana Agyemang, Agyemang Nana Gyamfi, full-stack developer Ghana, mobile app developer Ghana, React developer Ghana, React Native developer, Next.js developer, Node.js developer, HostelHubb, student accommodation Ghana, Ghanaian software engineer, KNUST developer, JUNIA ISEN, software developer France, CTO Ghana startup, JavaScript developer Ghana, Kotlin Android developer, web developer Europe France, cross-platform mobile developer"
+    />
+    <meta name="author" content="Gyamfi Nana Agyemang (AgyemangDev)" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="theme-color" content="#0a0a0a" />
+    <link rel="canonical" href="https://agyemangportfolio.vercel.app/" />
+
+    <!-- ═══════════════════════════════════════════════
+         OPEN GRAPH (Facebook, LinkedIn, WhatsApp…)
+    ═══════════════════════════════════════════════ -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="AgyemangDev" />
+    <meta property="og:url" content="https://agyemangportfolio.vercel.app/" />
+    <meta property="og:title" content="AgyemangDev | Gyamfi Nana Agyemang — Full-Stack & Mobile Developer" />
+    <meta
+      property="og:description"
+      content="Ghanaian full-stack & mobile app developer specialising in React, Next.js, React Native and Node.js. Co-founder & CTO of HostelHubb — the Airbnb for students in Ghana."
+    />
+    <meta property="og:image" content="https://agyemangdev-portfolio.vercel.app/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="AgyemangDev — Gyamfi Nana Agyemang portfolio" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- ═══════════════════════════════════════════════
+         TWITTER / X CARD
+    ═══════════════════════════════════════════════ -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@agyemanggyamfi_" />
+    <meta name="twitter:creator" content="@agyemanggyamfi_" />
+    <meta name="twitter:title" content="AgyemangDev | Gyamfi Nana Agyemang — Full-Stack & Mobile Developer" />
+    <meta
+      name="twitter:description"
+      content="Ghanaian full-stack & mobile developer. Co-founder & CTO of HostelHubb. React · Next.js · React Native · Node.js · Kotlin. KNUST · JUNIA ISEN France."
+    />
+    <meta name="twitter:image" content="https://agyemangdev-portfolio.vercel.app/og-image.png" />
+    <meta name="twitter:image:alt" content="AgyemangDev portfolio preview" />
+
+    <!-- ═══════════════════════════════════════════════
+         STRUCTURED DATA — Person (JSON-LD)
+    ═══════════════════════════════════════════════ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Gyamfi Nana Agyemang",
+      "alternateName": ["AgyemangDev", "Agyemang Nana Gyamfi"],
+      "url": "https://agyemangdev-portfolio.vercel.app/",
+      "image": "https://agyemangdev-portfolio.vercel.app/og-image.png",
+      "description": "Ghanaian full-stack software developer, mobile & web app developer, and co-founder/CTO of HostelHubb.",
+      "jobTitle": "Full-Stack & Mobile Developer · Co-founder & CTO",
+      "nationality": "GH",
+      "knowsAbout": [
+        "React", "Next.js", "React Native", "Node.js", "Express",
+        "JavaScript", "TypeScript", "Kotlin", "Java", "Android",
+        "iOS", "DevOps", "Full-Stack Development", "Mobile App Development"
+      ],
+      "alumniOf": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Kwame Nkrumah University of Science and Technology (KNUST)",
+          "sameAs": "https://www.knust.edu.gh/"
+        },
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "JUNIA – ISEN",
+          "url": "https://www.junia.com/"
+        }
+      ],
+      "sameAs": [
+        "https://x.com/agyemanggyamfi_",
+        "https://www.linkedin.com/in/gyamfi-nana-agyemang-a79179294/",
+        "https://www.tiktok.com/@agyemangdev"
+      ],
+      "founder": {
+        "@type": "Organization",
+        "name": "HostelHubb",
+        "description": "Student accommodation platform — the Airbnb for students in Ghana.",
+        "url": "https://hostelhubb.com"
+      }
+    }
+    </script>
+
+    <!-- ═══════════════════════════════════════════════
+         STRUCTURED DATA — WebSite (Sitelinks Searchbox)
+    ═══════════════════════════════════════════════ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "AgyemangDev",
+      "url": "https://agyemangportfolio.vercel.app/",
+      "description": "Portfolio of Gyamfi Nana Agyemang — Ghanaian full-stack & mobile developer.",
+      "author": {
+        "@type": "Person",
+        "name": "Gyamfi Nana Agyemang"
+      }
+    }
+    </script>
+
+    <!-- ═══════════════════════════════════════════════
+         STRUCTURED DATA — SoftwareApplication (HostelHubb)
+    ═══════════════════════════════════════════════ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "HostelHubb",
+      "applicationCategory": "TravelApplication",
+      "operatingSystem": "iOS, Android",
+      "description": "HostelHubb is the Airbnb for students in Ghana — connecting students with hostels, homestays, and hotels through a mobile and web platform featuring secure payments and verified listings.",
+      "author": {
+        "@type": "Person",
+        "name": "Gyamfi Nana Agyemang",
+        "alternateName": "AgyemangDev"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+
+    <!-- ═══════════════════════════════════════════════
+         STRUCTURED DATA — BreadcrumbList
+    ═══════════════════════════════════════════════ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "AgyemangDev Home",
+          "item": "https://agyemangportfolio.vercel.app/"
+        }
+      ]
+    }
+    </script>
+
+    <!-- ═══════════════════════════════════════════════
+         FAVICON / ICONS
+    ═══════════════════════════════════════════════ -->
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- ═══════════════════════════════════════════════
+         PERFORMANCE HINTS
+    ═══════════════════════════════════════════════ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+
+    <!-- ═══════════════════════════════════════════════
+         GEO / LOCALISATION
+    ═══════════════════════════════════════════════ -->
+    <meta name="geo.region" content="FR" />
+<meta name="geo.placename" content="France" />
+<meta name="language" content="French" />
+
+    <!-- ═══════════════════════════════════════════════
+         ADDITIONAL DISCOVERABILITY
+    ═══════════════════════════════════════════════ -->
+    <!-- Explicit name variations that search engines index -->
+    <meta name="subject" content="Full-Stack Developer Portfolio — AgyemangDev" />
+    <meta name="classification" content="Software Development, Mobile Development, Portfolio" />
+    <meta name="category" content="Technology, Software Engineering" />
+    <meta name="coverage" content="Worldwide" />
+    <meta name="revisit-after" content="7 days" />
+
+    <!-- Profile / person card for Google Knowledge Panel hints -->
+    <link rel="me" href="https://x.com/agyemanggyamfi_" />
+    <link rel="me" href="https://www.linkedin.com/in/gyamfi-nana-agyemang-a79179294/" />
   </head>
   <body>
-    <div id="root"></div>
+    <!-- ═══════════════════════════════════════════════
+         HIDDEN SEO ANCHOR TEXT
+         Visible to crawlers; React will overwrite <div id="root">
+    ═══════════════════════════════════════════════ -->
+    <div id="root">
+      <!-- Pre-render fallback — improves indexability before JS hydrates -->
+      <noscript>
+        <main style="font-family:sans-serif;max-width:720px;margin:auto;padding:2rem">
+          <h1>AgyemangDev — Gyamfi Nana Agyemang</h1>
+          <p>
+            <strong>AgyemangDev</strong> is the online identity of
+            <strong>Gyamfi Nana Agyemang</strong> (also written Agyemang Nana Gyamfi) —
+            a Ghanaian European-based full-stack software developer, mobile &amp; web app developer,
+            and co-founder &amp; CTO based between Ghana and France.
+          </p>
+
+          <h2>Skills &amp; Technologies</h2>
+          <p>
+            React, Next.js, React Native, Node.js, Express.js, JavaScript, TypeScript,
+            Kotlin, Java (Android), iOS development, DevOps, REST APIs, cross-platform
+            mobile development.
+          </p>
+
+          <h2>HostelHubb</h2>
+          <p>
+            Co-founder and lead developer of
+            <strong>HostelHubb</strong> — described as &ldquo;the Airbnb for students&rdquo; in Ghana.
+            HostelHubb connects students with hostels, homestays, and hotels via a
+            mobile and web platform with secure payments and verified listings.
+            Available on the App Store and Google Play Store.
+          </p>
+
+          <h2>Education</h2>
+          <ul>
+            <li>
+              <strong>KNUST</strong> (Kwame Nkrumah University of Science and Technology),
+              Ghana — Computer Science; former VP of SCISA (CS Society)
+            </li>
+            <li>
+              <strong>JUNIA – ISEN</strong>, France — BAC+4 engineering / software
+              (exchange programme)
+            </li>
+          </ul>
+
+          <h2>Connect</h2>
+          <ul>
+            <li>X / Twitter: <a href="https://x.com/agyemanggyamfi_">@agyemanggyamfi_</a></li>
+            <li>TikTok: <a href="https://www.tiktok.com/@agyemangdev">@agyemangdev</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/gyamfi-nana-agyemang-a79179294/">Gyamfi Nana Agyemang</a></li>
+            <li>Portfolio: <a href="https://agyemangportfolio.vercel.app">agyemangportfolio.vercel.app</a></li>
+          </ul>
+        </main>
+      </noscript>
+    </div>
+
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
