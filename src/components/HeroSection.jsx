@@ -4,16 +4,9 @@ import { motion } from "framer-motion";
 import { ArrowRight, Download } from "lucide-react";
 import { Link } from "react-router-dom";
 import AgyemangDev from "../assets/images/AgyemangDev.jpg";
+import handleDownloadCV from "../utils/downloadCV";
 
 const HeroSection = () => {
-  const handleDownloadCV = () => {
-    const link = document.createElement("a");
-    link.href = "agyemangdev_cv.pdf";
-    link.download = "AgyemangDev_CV.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
 
   return (
     <section className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 py-20 relative overflow-hidden">

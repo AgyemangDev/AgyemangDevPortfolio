@@ -3,16 +3,10 @@ import { motion } from "framer-motion";
 import { Download, Award, BookOpen, Code, Coffee } from "lucide-react"
 import { experienceData } from "../assets/data/experienceData";
 import AgyemangDev2 from "../assets/images/AgyemangDev2.jpeg"
+import handleDownloadCV from "../utils/downloadCV";
 
 const About = () => {
-  const handleDownloadCV = () => {
-    const link = document.createElement("a");
-    link.href = "agyemangdev_cv.pdf";
-    link.download = "AgyemangDev_CV.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+
 
   const startYear = 2021;
   const currentYear = new Date().getFullYear();

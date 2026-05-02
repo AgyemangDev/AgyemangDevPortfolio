@@ -1,16 +1,14 @@
 "use client";
-
 import RotatingTechCube from "./RotatingTechCube";
 
 const TechCategory = ({ title, items }) => (
-  <div className="mb-12">
-    <h3 className="text-2xl font-semibold mb-6 text-green-400">{title}</h3>
-    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
-      {items.map((tech) => (
-        <RotatingTechCube key={tech.name} tech={tech} />
+  <div>
+    <p className="text-xs font-medium uppercase tracking-widest text-gray-500 mb-4">{title}</p>
+    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
+      {items.map((tech, i) => (
+        <RotatingTechCube key={tech.name} tech={tech} index={i} />
       ))}
     </div>
   </div>
 );
-
 export default TechCategory;
