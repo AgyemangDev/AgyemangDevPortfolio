@@ -12,7 +12,7 @@
   "dependencies": {
     "@tailwindcss/vite": "^4.0.17",
     "expo": "^54.0.25",
-    "framer-motion": "^12.6.1",
+    "framer-motion": "^12.42.2",
     "github-calendar": "^2.3.4",
     "lucide-react": "^0.486.0",
     "react": "^19.2.0",
