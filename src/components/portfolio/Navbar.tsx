@@ -52,17 +52,20 @@ export function Navbar() {
           <div className="hidden items-center gap-2 md:flex">
             <LangToggle lang={lang} setLang={setLang} />
           </div>
-          <button
-            className="md:hidden rounded-lg border border-white/10 bg-white/5 p-2 backdrop-blur"
-            onClick={() => setOpen((v) => !v)}
-            aria-label="Menu"
-          >
-            <div className="flex h-5 w-5 flex-col justify-center gap-1">
-              <span className={`h-0.5 w-full bg-current transition ${open ? "translate-y-[6px] rotate-45" : ""}`} />
-              <span className={`h-0.5 w-full bg-current transition ${open ? "opacity-0" : ""}`} />
-              <span className={`h-0.5 w-full bg-current transition ${open ? "-translate-y-[6px] -rotate-45" : ""}`} />
-            </div>
-          </button>
+          <div className="flex items-center gap-2 md:hidden">
+            <LangToggle lang={lang} setLang={setLang} />
+            <button
+              className="rounded-lg border border-white/10 bg-white/5 p-2 backdrop-blur"
+              onClick={() => setOpen((v) => !v)}
+              aria-label="Menu"
+            >
+              <div className="flex h-5 w-5 flex-col justify-center gap-1">
+                <span className={`h-0.5 w-full bg-current transition ${open ? "translate-y-[6px] rotate-45" : ""}`} />
+                <span className={`h-0.5 w-full bg-current transition ${open ? "opacity-0" : ""}`} />
+                <span className={`h-0.5 w-full bg-current transition ${open ? "-translate-y-[6px] -rotate-45" : ""}`} />
+              </div>
+            </button>
+          </div>
         </nav>
       </motion.header>
       <AnimatePresence>
@@ -80,9 +83,6 @@ export function Navbar() {
                   {t.nav[s]}
                 </button>
               ))}
-              <div className="mt-6 flex items-center gap-2">
-                <LangToggle lang={lang} setLang={setLang} />
-              </div>
             </div>
           </motion.div>
         )}
@@ -92,16 +92,21 @@ export function Navbar() {
 }
 
 function LangToggle({ lang, setLang }: { lang: "en" | "fr"; setLang: (l: "en" | "fr") => void }) {
+  const flags: Record<"en" | "fr", string> = {
+    en: "🇬🇧",
+    fr: "🇫🇷",
+  };
   return (
     <div className="flex items-center rounded-full border border-white/10 bg-white/5 p-0.5 text-xs backdrop-blur">
       {(["en", "fr"] as const).map((l) => (
         <button
           key={l}
           onClick={() => setLang(l)}
-          className={`rounded-full px-3 py-1 uppercase transition ${
+          className={`flex items-center gap-1 rounded-full px-3 py-1 uppercase transition ${
             lang === l ? "bg-white/15 text-foreground" : "text-foreground/60"
           }`}
         >
+          <span className="text-sm not-italic">{flags[l]}</span>
           {l}
         </button>
       ))}
