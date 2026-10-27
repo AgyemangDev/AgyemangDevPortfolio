@@ -1,0 +1,10 @@
+{
+  "name": "AgyemangDev — Gyamfi Nana Agyemang",
+  "short_name": "AgyemangDev",
+  "description": "Portfolio of Gyamfi Nana Agyemang — full-stack, mobile & AI software engineer.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050510",
+  "theme_color": "#050510",
+  "icons": [{ "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}

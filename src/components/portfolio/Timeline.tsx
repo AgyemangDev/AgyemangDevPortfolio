@@ -5,7 +5,7 @@ import { SectionTitle } from "./About";
 export function Timeline() {
   const { t } = usePortfolio();
   return (
-    <section id="timeline" className="relative px-6 py-32">
+    <section id="timeline" className="relative px-4 py-20 sm:px-6 sm:py-32">
       <div className="mx-auto max-w-5xl">
         <SectionTitle sub={t.timeline.subtitle}>{t.timeline.title}</SectionTitle>
         <div className="relative mt-16">

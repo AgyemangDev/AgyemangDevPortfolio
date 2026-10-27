@@ -4,7 +4,7 @@ import { SectionTitle } from "./About";
 export function Resume() {
   const { t } = usePortfolio();
   return (
-    <section id="resume" className="relative px-6 py-32">
+    <section id="resume" className="relative px-4 py-20 sm:px-6 sm:py-32">
       <div className="mx-auto max-w-5xl">
         <SectionTitle sub={t.resume.subtitle}>{t.resume.title}</SectionTitle>
         <motion.div
@@ -12,7 +12,7 @@ export function Resume() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.6 }}
-          className="glass relative mt-12 overflow-hidden rounded-3xl p-10 sm:p-14"
+          className="glass relative mt-12 overflow-hidden rounded-3xl p-6 sm:p-14"
         >
           {/* decorative glow */}
           <div className="pointer-events-none absolute -right-24 -top-24 h-64 w-64 rounded-full bg-fuchsia-500/20 blur-3xl" />

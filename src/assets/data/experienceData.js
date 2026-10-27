@@ -1,4 +1,11 @@
 export const experienceData = [
+  {
+    period: "Sep 2026 - Present",
+    role: "Software Engineer (Alternance)",
+    company: "Allshares",
+    description:
+      "Work-study software engineering role alongside my MSc at Junia, building and shipping production features as part of the engineering team.",
+  },
     {
     period: "2025 - Present",
     role: "MSc in Software Engineering",

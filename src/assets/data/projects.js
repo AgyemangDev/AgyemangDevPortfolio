@@ -2,11 +2,11 @@ import Mallzonix from "../images/mallzonix.png"
 import IRCDashboard from "../images/ircdashboard.png";
 import Hostelhubb from "../images/hostelhubb.png";
 import KNUSTAttendance from "../images/knustattendanceapp.png";
-import Mizpah from "../images/mizpah.png";
-import NextGenTransport from "../images/nextgentransport.png";
+import Mizpah from "../images/mizpah.jpg";
+import NextGenTransport from "../images/nextgentransport.jpg";
 import HostelhubbWeb from "../images/hostelhubbwebpage.png";
 import HostelhubbAdminApp from "../images/hostelhubbadmin.png";
-import GBM from "../images/gbm.png";
+import GBM from "../images/gbm.jpg";
 
 export const webProjects = [
   {

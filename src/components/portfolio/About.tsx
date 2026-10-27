@@ -1,11 +1,11 @@
 import { useEffect, useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 import { usePortfolio } from "./PortfolioContext";
-import AgyemangDev from "../../assets/images/AgyemangDev.jpg";
+import { PhotoStack } from "./PhotoStack";
 export function About() {
   const { t } = usePortfolio();
   return (
-    <section id="about" className="relative px-6 py-32">
+    <section id="about" className="relative px-4 py-20 sm:px-6 sm:py-32">
       <div className="mx-auto max-w-6xl">
         <SectionTitle>{t.about.title}</SectionTitle>
         <div className="mt-12 grid gap-8 md:grid-cols-[1fr_1.4fr]">
@@ -14,13 +14,9 @@ export function About() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.6 }}
-            className="glass overflow-hidden rounded-3xl p-2"
+            className="px-2 pt-2"
           >
-            <img
-              src={AgyemangDev}
-              alt="Portrait"
-              className="h-full w-full rounded-2xl object-cover"
-            />
+            <PhotoStack alt="Gyamfi Nana Agyemang" />
           </motion.div>
           <motion.div
             initial={{ opacity: 0, x: 30 }}

@@ -1,6 +1,7 @@
 import { PortfolioProvider } from "./PortfolioContext";
 import { Galaxy } from "./Galaxy";
 import { Cursor } from "./Cursor";
+import { Rocket } from "./Rocket";
 import { Navbar } from "./Navbar";
 import { Hero } from "./Hero";
 import { About } from "./About";
@@ -17,6 +18,7 @@ export function Portfolio() {
       <div className="relative min-h-screen text-foreground">
         <Galaxy />
         <Cursor />
+        <Rocket />
         <Navbar />
         <main>
           <Hero />

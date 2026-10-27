@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { usePortfolio } from "./PortfolioContext";
-// Animated star field with mouse parallax.
+import { flight } from "../../lib/flight";
+// Animated star field with mouse parallax. Stars stream past (and streak) with the rocket's speed.
 export function Galaxy() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const { theme } = usePortfolio();
@@ -44,19 +45,34 @@ export function Galaxy() {
       ctx.fillStyle = g;
       ctx.fillRect(0, 0, width, height);
       for (const s of stars) {
+        const v = flight.velocity;
         // parallax offset scaled by depth
-        const px = s.x + mouseX * s.z * 15;
+        const px = s.x + mouseX * s.z * 15 - flight.steer * s.z * 25;
         const py = s.y + mouseY * s.z * 15;
         // twinkle
         s.o += s.tw;
         if (s.o > 0.9 || s.o < 0.15) s.tw = -s.tw;
-        ctx.beginPath();
-        ctx.arc(px, py, s.r * s.z, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(${starColor},${s.o})`;
-        ctx.fill();
-        // slow drift
+        if (Math.abs(v) > 2) {
+          // warp streak: forward thrust sends stars downward
+          ctx.strokeStyle = `rgba(${starColor},${Math.min(0.9, s.o)})`;
+          ctx.lineWidth = s.r * s.z;
+          ctx.lineCap = "round";
+          ctx.beginPath();
+          ctx.moveTo(px, py);
+          ctx.lineTo(px, py - Math.min(Math.abs(v) * s.z * 1.6, 140) * Math.sign(v));
+          ctx.stroke();
+        } else {
+          ctx.beginPath();
+          ctx.arc(px, py, s.r * s.z, 0, Math.PI * 2);
+          ctx.fillStyle = `rgba(${starColor},${s.o})`;
+          ctx.fill();
+        }
+        // slow drift + thrust-driven flow
         s.x -= 0.05 * s.z;
+        s.y += v * s.z * 0.9;
         if (s.x < -5) s.x = width + 5;
+        if (s.y > height + 5) s.y = -5;
+        else if (s.y < -5) s.y = height + 5;
       }
       animId = requestAnimationFrame(render);
     };

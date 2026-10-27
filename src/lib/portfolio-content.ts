@@ -1,11 +1,11 @@
-import Ghafra_Web from "../assets/images/ghafra_web.png";
-import Ghafra_Mobile from "../assets/images/ghafra_mobile.png";
-import KCE_Web from "../assets/images/kce_website.png";
-import quantumMechanics from "../assets/images/quantum_mechanics.png";
-import Hostelhubb_Mobile from "../assets/images/hostelhubb_mobile.png";
-import Knust_attendance from "../assets/images/knust_attendance.png";
-import nextgenTransport from "../assets/images/nextgentransport.png";
-import hostelhubb_web from "../assets/images/hostelhubbweb.png";
+import Ghafra_Web from "../assets/images/ghafra_web.jpg";
+import Ghafra_Mobile from "../assets/images/ghafra_mobile.jpg";
+import KCE_Web from "../assets/images/kce_website.jpg";
+import quantumMechanics from "../assets/images/quantum_mechanics.jpg";
+import Hostelhubb_Mobile from "../assets/images/hostelhubb_mobile.jpg";
+import Knust_attendance from "../assets/images/knust_attendance.jpg";
+import nextgenTransport from "../assets/images/nextgentransport.jpg";
+import hostelhubb_web from "../assets/images/hostelhubbweb.jpg";
 export const content = {
   en: {
     nav: {
@@ -30,21 +30,30 @@ export const content = {
       ],
       tagline:
     "I don't hand off and disappear — from idea to launch, I stay in the room, building scalable web, mobile, and AI-powered systems from first line of code to production, across education, healthcare, and digital communities.",
+      currently: "Software Engineer (Alternance) @ Allshares",
+      pitch: "I turn ideas into products people actually use.",
       ctaPrimary: "View my work",
-      ctaSecondary: "Contact me",
+      ctaSecondary: "Let's work together",
+      ctaCv: "Download CV",
+      proof: [
+        { value: "3", label: "apps live on App Store & Google Play" },
+        { value: "4+", label: "years building real products" },
+        { value: "EN · FR", label: "fluent, remote-ready teams" },
+        { value: "9", label: "LinkedIn recommendations" },
+      ],
     },
 
     about: {
       title: "About me",
 bio:
-        "My path spans three countries: a Computer Science degree in Ghana, a Software Engineering degree in France, and an internship in Belgium — experiences that taught me to build for real users across language and cultural gaps. Today I lead engineering for Ghafra, connecting Ghanaian and French communities, and co-founded HostelHubb, a student accommodation startup.",
+        "I'm a software engineer who turns ideas into products people actually use. Since September 2026 I've been working at Allshares as a software engineer on a work-study contract (alternance), alongside my Master's in Software Engineering at Junia in France.",
       bio2:
-        "Technically, I ship web, mobile, and AI-powered products end to end — React, Next.js, and React Native on the frontend; Node.js, Firebase, PostgreSQL, and Supabase on the backend; OpenAI API and Scikit-learn for AI features — with DevOps and analytics in the mix when needed. Beyond code, I care about the people side: mentoring, translating technical decisions for non-technical stakeholders, and working fluently across English and French in remote, cross-cultural teams.",
+        "I've built apps and websites in Ghana, France and Belgium, and co-founded HostelHubb, a student housing platform. I work fluently in English and French, explain technical choices in plain language, and stay involved from the first idea to launch.",
       stats: [
         { value: 4, suffix: "+", label: "Years Experience" },
         { value: 10, suffix: "+", label: "Projects Built" },
         { value: 3, suffix: "", label: "Countries" },
-        { value: 1, suffix: "", label: "Active Startup (HostelHubb)" },
+        { value: 3, suffix: "", label: "Apps Live on the Stores" },
       ],
     },
 
@@ -154,6 +163,13 @@ bio:
       subtitle: "Education, internships & experience",
       items: [
         {
+          year: "Sep 2026 - Present",
+          title: "Software Engineer (Alternance)",
+          org: "Allshares",
+          description:
+            "Work-study software engineering role alongside my MSc at Junia, building and shipping production features as part of the engineering team.",
+        },
+        {
           year: "2026 - Present",
           title: "Lead Full-Stack Engineer",
           org: "Ghafra (France & Ghana Association)",
@@ -232,7 +248,7 @@ bio:
           long:
             "Contributed to the development of production-ready mobile features, API integration, authentication, state management, and scalable application architecture while collaborating within an international engineering team.",
           tech: ["React Native", "TypeScript", "REST API", "Expo", "Git"],
-          image: "/projects/placeholder.png",
+          image: "/projects/placeholder.svg",
           type: "other",
         },
 
@@ -401,32 +417,6 @@ liveUrl: "https://nextgentransportsite-git-main-agyemang166s-projects.vercel.app
 
     testimonials: {
       title: "Reviews",
-      items: [
-        {
-          quote:
-            "Professional recommendations will be added soon as I collect feedback from collaborators and clients.",
-          name: "Coming Soon",
-          role: "Professional Reference",
-          company: "",
-          avatar: "/avatars/placeholder.png",
-        },
-        {
-          quote:
-            "Feedback from internships, projects, and academic collaborations will appear here.",
-          name: "Coming Soon",
-          role: "Project Collaborator",
-          company: "",
-          avatar: "/avatars/placeholder.png",
-        },
-        {
-          quote:
-            "Testimonials are currently being gathered from teams I've worked with.",
-          name: "Coming Soon",
-          role: "Engineering Partner",
-          company: "",
-          avatar: "/avatars/placeholder.png",
-        },
-      ],
     },
 
     resume: {
@@ -495,21 +485,30 @@ liveUrl: "https://nextgentransportsite-git-main-agyemang166s-projects.vercel.app
       ],
   tagline:
         "Je ne transmets pas le projet pour disparaître ensuite — de l'idée au lancement, je reste impliqué, en construisant des systèmes web, mobiles et propulsés par l'IA, scalables, à travers l'éducation, la santé et les communautés numériques.",
+      currently: "Ingénieur Logiciel (Alternance) @ Allshares",
+      pitch: "Je transforme des idées en produits que les gens utilisent vraiment.",
       ctaPrimary: "Voir mes projets",
-      ctaSecondary: "Me contacter",
+      ctaSecondary: "Travaillons ensemble",
+      ctaCv: "Télécharger le CV",
+      proof: [
+        { value: "3", label: "apps sur l'App Store & Google Play" },
+        { value: "4+", label: "ans à construire de vrais produits" },
+        { value: "EN · FR", label: "bilingue, à l'aise à distance" },
+        { value: "9", label: "recommandations LinkedIn" },
+      ],
     },
 
     about: {
       title: "À propos de moi",
 bio:
-        "Mon parcours s'étend sur trois pays : un diplôme en informatique au Ghana, un diplôme en ingénierie logicielle en France, et un stage en Belgique — des expériences qui m'ont appris à concevoir pour de vrais utilisateurs, au-delà des barrières de langue et de culture. Aujourd'hui, je dirige l'ingénierie chez Ghafra, une plateforme qui connecte les communautés ghanéenne et française, et j'ai cofondé HostelHubb, une startup dédiée au logement étudiant.",
+        "Je suis ingénieur logiciel et je transforme des idées en produits que les gens utilisent vraiment. Depuis septembre 2026, je travaille chez Allshares en alternance comme ingénieur logiciel, en parallèle de mon Master en ingénierie logicielle à Junia, en France.",
       bio2:
-        "Techniquement, je conçois des produits web, mobiles et propulsés par l'IA de bout en bout — React, Next.js et React Native côté frontend ; Node.js, Firebase, PostgreSQL et Supabase côté backend ; OpenAI API et Scikit-learn pour les fonctionnalités d'IA — avec DevOps et analytics en renfort selon les besoins. Au-delà du code, j'accorde une grande importance à l'humain : mentorat, traduction des décisions techniques pour les parties prenantes non techniques, et travail en anglais comme en français au sein d'équipes distantes et multiculturelles.",
+        "J'ai conçu des applications et des sites au Ghana, en France et en Belgique, et cofondé HostelHubb, une plateforme de logement étudiant. Je travaille couramment en anglais et en français, j'explique les choix techniques simplement, et je reste impliqué de l'idée au lancement.",
       stats: [
         { value: 4, suffix: "+", label: "Années d'expérience" },
         { value: 10, suffix: "+", label: "Projets réalisés" },
         { value: 3, suffix: "", label: "Pays" },
-        { value: 1, suffix: "", label: "Startup active (HostelHubb)" },
+        { value: 3, suffix: "", label: "Apps sur les stores" },
       ],
     },
 
@@ -619,6 +618,13 @@ bio:
       subtitle: "Études, stages et expérience",
       items: [
         {
+          year: "Sept. 2026 - Présent",
+          title: "Ingénieur Logiciel (Alternance)",
+          org: "Allshares",
+          description:
+            "Alternance en ingénierie logicielle en parallèle de mon Master à Junia : conception et livraison de fonctionnalités en production au sein de l'équipe technique.",
+        },
+        {
           year: "2026 - Présent",
           title: "Lead Ingénieur Full-Stack",
           org: "Ghafra (Association France & Ghana)",
@@ -697,7 +703,7 @@ projects: {
           long:
             "Contribution au développement de fonctionnalités mobiles prêtes pour la production, intégration d'API, authentification, gestion d'état et architecture évolutive au sein d'une équipe d'ingénierie internationale.",
           tech: ["React Native", "TypeScript", "REST API", "Expo", "Git"],
-          image: "/projects/placeholder.png",
+          image: "/projects/placeholder.svg",
           type: "other",
         },
 
@@ -871,32 +877,6 @@ projects: {
 
     testimonials: {
       title: "Avis",
-      items: [
-        {
-          quote:
-            "Des recommandations professionnelles seront bientôt ajoutées, au fur et à mesure des retours de collaborateurs et clients.",
-          name: "Bientôt disponible",
-          role: "Référence professionnelle",
-          company: "",
-          avatar: "/avatars/placeholder.png",
-        },
-        {
-          quote:
-            "Les retours issus de stages, projets et collaborations académiques apparaîtront ici.",
-          name: "Bientôt disponible",
-          role: "Collaborateur de projet",
-          company: "",
-          avatar: "/avatars/placeholder.png",
-        },
-        {
-          quote:
-            "Les témoignages sont en cours de collecte auprès des équipes avec lesquelles j'ai travaillé.",
-          name: "Bientôt disponible",
-          role: "Partenaire d'ingénierie",
-          company: "",
-          avatar: "/avatars/placeholder.png",
-        },
-      ],
     },
 
     resume: {

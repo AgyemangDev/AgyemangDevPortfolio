@@ -17,6 +17,10 @@ export function PortfolioProvider({ children }: { children: ReactNode }) {
     if (theme === "dark") root.classList.add("dark");
     else root.classList.remove("dark");
   }, [theme]);
+  useEffect(() => {
+    document.documentElement.lang = lang;
+  }, [lang]);
+
   const t = content[lang];
   return (
     <PortfolioCtx.Provider value={{ lang, setLang, theme, setTheme, t }}>

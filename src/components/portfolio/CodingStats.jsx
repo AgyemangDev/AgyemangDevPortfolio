@@ -161,7 +161,7 @@ const CodingStats = () => {
   ]
 
   return (
-    <section id="coding-activity" className="relative px-6 py-32">
+    <section id="coding-activity" className="relative px-4 py-20 sm:px-6 sm:py-32">
       <div className="mx-auto max-w-5xl">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
